@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0px;
+  font-family: Roboto, Helvetica, sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+p {
+  /*  display: block;*/
+  margin: 0;
+  color: #fff;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+  /*display: inline-block;*/
+  /*opacity: 60%;*/
+  transition: 1s;
+}
+
+ul, ol {
+  padding: 0px 0px 0px 20px;
+}
+
+h1 {
+  display: block;
+  color: #fff;
+  padding-top: 30%;
+  font-family: Helvetica, sans-serif;
+  font-size: 60px;
+  letter-spacing: .01em;
+  line-height: 1.1em;
+  text-align: left;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(11, 19, 47, 0.7), rgba(11, 19, 47, 0.7)), url("../img/main_bg.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: relative;
+  max-width: 700px;
+  top: 5%;
+  left: 10%;
+  color: #fff;
+}
+
+.mainbutton a {
+  background-color: #D9DA28;
+  color: #00253F;
+  font-weight: 600;
+  height: 60px;
+  padding: 17px 35px;
+  border-radius: 4px;
+  margin: 5px;
+  transition: 500ms;
+}
+
+.mainbutton a:hover {
+  background-color: #B6B728;
+  transition: 500ms;
+}
+
+.logotips {
+  z-index: 100;
+}
+
+.item1 {
+  grid-area: a;
+  background-image: url(../img/logo.svg); display: inline-block;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 80px;
+}
+
+.subline {
+  margin: 20px 0px;
+}
+
+.title {
+  margin: 0px 0px;
+}
+
+.wrapper {
+  display: block;
+  max-width: 1110px;
+  z-index: 1;
+  padding: 20%;
+  height: 100%;
+}
+
+/* Screens from 992px and < */
+
+@media screen and (max-width: 992px) {
+  body, html {
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .hero-text {
+    text-align: left;
+    position: relative;
+    max-width: 80%;
+    top: 5%;
+    left: 10%;
+    color: #fff;
+  }
+}
+
+/* Screens from 576px and < */
+
+
+@media screen and (max-width: 576px) {
+  a {
+    padding: 0px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
